@@ -4,6 +4,8 @@ body {
   align-items: center;
   height: 100vh;
   background-color: #fffcf4;
+  margin: 0;
+  padding: 0;
 }
 
 .letter-o {
