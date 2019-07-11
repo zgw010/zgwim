@@ -1,13 +1,237 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>z</title>
-    <link rel="stylesheet" href="index.css">
-<link rel="icon" href="https://avatars1.githubusercontent.com/u/26003810?v=4" type="image/png"></head>
-<body>
-<div class='letter-o'>
-  <div class='counter'></div>
-</div>
+    <title>zgw.im</title>
+    <link rel="icon"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAACx1BMVEVHcEyObKCObaGNbJ+MbKCAgICMa5yHaaWNbqCPaZ6PcJ+Oa5+Na5+AgKqNbaCKbJyNbaCSbaSNbJ+NbaGAYJ+Pap+AgICVapWNbJ+Jdp2LbJ+Oap+MbJ6IZpmMbZ6NbZ+KbaCMfa+Nb6KNa56Na5+MbZ//AP+ObJ+NbaCNbqGNcaSObJ+ZZpmNbZ2qVaqObZ+MZpmMcKOOa5+NbqGObKCSbZ6MbJ+LbZ+Pa56Md6qOb6KNb6KNbJ+JbJ2Na5+MbJ+ObKCObKCOa6CObJ+Na56NbKCMbaCMa5+PaqKMbaGNdKaNbqCNbJ+LhraOb6GObJ+LibqNbaCNb6GMbZ6NdaiPbZ6NbqCNb6KMbKCObJ+NbJ+NbaCNa5+Nb6GNbaCPcJ+NbJ+MbqGNb6KOaKGOcKKNa5+MbZ6ObJ+MhLWMc6WNa6CNbKCNa6CMbKCObaGNbKCObKCNbaCNbqCObJ+LbKKNbaCNbaCNa5+MbaCSbZ6Pb6GObJ+NbZ+Kbp+MbJ6Qb52Kap+MbZ+OcaqFy/iNbJ+f3f+KjL2Jns6GuOaIpdWf3P+e2fyNbZ+WpM+b2v6FyveGxfKRiLeNb6KQfa2cyvCOdKae1PeMfbCZ2P2S1PuZ2f2d3P+JzvmW1/2M0PqMbZ+IzfmQfK2GzPiGveuav+aObqGJq9qdz/OGwO6LgbKFyviTlsOOc6aFwvCZstqIqNeWpdCYtNyawOaXp9CUl8SHsN+FyPWS1PyOcaSe2/2Jns2HtOOKksKHqNid0/ea2v6S1fyO0fqe3f+Gx/Scy/Cc2PuVuuSKlMSSiLaIr96OcKKGt+WZs9uP0vuMz/qLj7+UlsOHu+mJoNCZuOCUlMGJmcqLrduV0PaNhbaJm8yIo9OQf66JuuiKiruJl8eGueibweeOdqif2PqVnMiOj8CGy/iMlsaNbaGGwvCSi7mbyO6czfGLsd6FJvKGAAAAqnRSTlMA/jZXZgQfEd8iIFhPBtwcmw7+/ggwAgyADUBINw9ZoiP9/Xmf/QG1+bf8FgUvAz4U/YX5yQoomDL97NVjGkt5OY4sZ5HB7l0ptvzW+P7q+v6W1IH8RPjrdvWa/nf97xD3z9cb7XCph/79/s1r9/7T/PPkvSHi1HLsFbjIYCXGJxhSCf///////////////////////////////////////////////////qfdg7oAAAKfSURBVEjHzZblW1RREIdHcEGW7gYFQZFGQFAa7O7u7u5AnTkILsoKKCAtnQYG2K3Y3d31R3jZx0/eu/c5+43f533vmTnvc2YWoP3H1FAujhKE00SSjbsYmTR1l1xyvExFSNceKJMy626gIzJ0SGcxYuGRJk7rP+IceUq079xdqunrGkI9aLCp1CUbGoky81ZVXhty1iqQ05QbHWEXBOJMsYX0DwJWO4P9Nj2IDt0KCZs3ArjOyVKxfMSMLv2CpJHp5ADhlAhOZALG5CJcSPoxxg4inqb+WsqwmTEXoq2MwZacwJnCwaXDccbYJaz26OutrXRzBYCBHcAaAG8lKGbtP8BYLuKI4QM4e/eko8IhBVgp1MsXg577djOWh+oxZjacyKbMbMb2It6gsZyEMe0RyrqHtye7cxKWvbNUn5qeC0qm+XIivQQln+kNPqIoTkJPUPLr+xesDg614yMUfQQlP+t/4NsV/pyHxNIdxhr/YCvN10FJy+88vBK5NowT8anIZnXNX/Edxeig5EP6N3xvPY9bSamq5fVHdUbNytncSspZE1XiK1rCreQBq2p+UdsQvDhAByVPMsswxSuC85ApbUoeP8MTFM+rZNxN4ZWcwpORqxw5kYEVba/kED4VRgZf9DWvpAgfCkPbzi0MbNwU4KoP4Kv1A5bDSlWMFWLtgqVKiKAdEENxEEVGEGtlrwUZSeWM5ZdgGq0HcCF9MKFASKRkcCBXbUrqhLLuonrhOj+AnUnbISjJEZTxCkgI0aJkVP15zXS8vyiOs/cJ1MjY5QJMLV7eUZwt5mJCqRlcFxFTl0mu1w3iG/DJvKpRgtiQKpGX5C+pJLdE67I8TLb/EX7js64VFsnsVzFiTjkpsqkh0UoebdZJNmYh7f4f1V99h3558+l3iQAAAABJRU5ErkJggg=="
+        type="image/png">
+</head>
 
-</body></html>
+<style>
+    body {
+        background: #ebebeb;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100%;
+        z-index: -2;
+        position: relative;
+    }
+
+    body:before {
+        content: '';
+        position: absolute;
+        width: 150px;
+        right: 10%;
+        top: 5vh;
+        height: 30vh;
+        background: url(https://raw.githubusercontent.com/zgw0/blog/master/imgs/zgwimimg.jpeg) no-repeat;
+        background-size: cover;
+        background-position: 0px 0px;
+        border: 10px solid #303030;
+    }
+
+    .tv {
+        top: 15vh;
+        left: 30%;
+        content: '';
+        position: relative;
+        width: 350px;
+        height: 200px;
+        border-radius: 0px;
+        background: #495d62;
+        box-shadow: 0px 0px 0px 10px #303030, 18px 195px 0px -97px #636e72, 18px 205px 0px -97px #636e72, 18px 215px 0px -97px #636e72, 18px 225px 0px -97px #636e72, 0px 210px 0px -80px #b2bec3, 0px 210px 0px -75px #495d62, 0px 210px 0px -75px #495d62, 0px 200px 0px -70px #c7ecee, 0px 200px 0px -55px #8d7767, 120px 220px 0px -50px #c7ecee, 120px 200px 0px -55px #8d7767, -120px 180px 0px -50px #c7ecee, -120px 200px 0px -55px #8d7767;
+    }
+
+    .tv:after {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 40px;
+        border: 3px solid #666666;
+        background-color: #fff;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        top: 290px;
+        left: -25px;
+    }
+
+    .tv:before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #00b300;
+        border: 1px solid green;
+        top: 260px;
+        left: -25px;
+        z-index: 1;
+        box-shadow: 10px 0px 2px 0px green, 10px 0px 2px 1px green, 0px -10px 2px 0px #00b300, -10px 0px 2px 1px green, 100px 20px 0px -12px #777777, 100px 32px 0px -10px #777777, 100px 45px 0px -12px #777777;
+    }
+
+    .clock {
+        width: 80px;
+        height: 80px;
+        background: #ecf0f1;
+        border: 3px solid black;
+        border-radius: 100%;
+        left: 15%;
+        top: -180px;
+        position: relative;
+        /* Big hand */
+        /* Little hand */
+    }
+
+    .clock:before,
+    .clock:after {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 2px;
+        left: 40px;
+        background: #000;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .clock:before {
+        top: 5px;
+        height: 40px;
+        transform-origin: 10px 48px;
+        transform: rotate(350deg);
+    }
+
+    .clock:after {
+        top: 16px;
+        height: 30px;
+        transform-origin: 1px 9px;
+    }
+
+    .desk {
+        position: relative;
+        right: 0%;
+        left: 75%;
+        width: 150px;
+        height: 50px;
+        top: 14vh;
+        border-radius: 100%;
+        background: #fff;
+        box-shadow: 0px 10px 3px 10px #8d7767;
+    }
+
+    .desk:after {
+        content: '';
+        position: absolute;
+        top: 8vh;
+        left: 0px;
+        z-index: -1;
+        height: 180px;
+        width: 150px;
+        border-radius: 50% 50% 10px 10px;
+        background: #c7ecee;
+        box-shadow: 0px 0px 0px 10px #8d7767;
+    }
+
+    .social-links {
+        content: '';
+        margin: 0px;
+        position: absolute;
+        height: 15vh;
+        width: 100%;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icon {
+        height: 36px;
+        width: 36px;
+        margin: 5px;
+        transition-property: all;
+        -webkit-transition-property: all;
+        transition-duration: 0.3s;
+        -webkit-transition-duration: 0.3s;
+        cursor: pointer;
+        fill: gray;
+    }
+
+    .github:hover {
+        fill: #181717;
+    }
+
+    .gmail:hover {
+        fill: #D14836;
+    }
+
+    .me:hover {
+        fill: #00A98F;
+    }
+
+    .twitter:hover {
+        fill: #1DA1F2;
+    }
+
+    .telegram:hover {
+        fill: #2CA5E0;
+    }
+
+    .wechat:hover {
+
+        fill: #7BB32E;
+    }
+</style>
+</head>
+
+<body>
+    <div class="component">
+        <div class="tv"></div>
+        <div class="clock"></div>
+        <div class="desk"></div>
+        <div class="social-links">
+            <a href="https://github.com/zgw0">
+                <svg class="icon github" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <title>GitHub: zgw0</title>
+                    <path
+                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                </svg>
+            </a>
+            <a href="Mailto:zgw010@gmail.com" target="_blank">
+                <svg class="icon gmail" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <title>Gmail: zgw010@gmail.com</title>
+                    <path
+                        d="M24 4.5v15c0 .85-.65 1.5-1.5 1.5H21V7.387l-9 6.463-9-6.463V21H1.5C.649 21 0 20.35 0 19.5v-15c0-.425.162-.8.431-1.068C.7 3.16 1.076 3 1.5 3H2l10 7.25L22 3h.5c.425 0 .8.162 1.069.432.27.268.431.643.431 1.068z" />
+                </svg>
+            </a>
+            <a href="https://twitter.com/zgw010" target="_blank">
+                <svg class="icon twitter" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <title>Twitter: zgw010</title>
+                    <path
+                        d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z" />
+                </svg>
+            </a>
+            <a>
+                <svg class="icon wechat" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <title>WeChat: zgw_im</title>
+                    <path
+                        d="M23.541 12.748c-.609-1.38-1.758-2.476-3.092-3.151-2.354-1.192-5.281-1.185-7.629.03-1.631.837-2.993 2.337-3.379 4.162-.318 1.344-.033 2.791.68 3.961 1.061 1.762 2.979 2.887 4.971 3.248 1.443.293 2.936.119 4.338-.285.842.326 1.592.854 2.408 1.246-.211-.707-.436-1.406-.676-2.102.916-.65 1.746-1.461 2.244-2.479.744-1.415.789-3.171.135-4.63zm-9.924-9.466c-2.495-1.404-5.602-1.615-8.286-.645-1.764.635-3.36 1.815-4.346 3.42-.895 1.45-1.23 3.258-.799 4.917.433 1.84 1.711 3.383 3.262 4.413-.3.85-.585 1.699-.855 2.555.975-.51 1.95-1.043 2.926-1.561 1.17.375 2.415.559 3.66.518-.33-.943-.405-1.965-.255-2.951.225-1.371.975-2.625 1.994-3.554 1.726-1.615 4.171-2.296 6.496-2.131-.436-2.135-1.936-3.939-3.824-4.98h.027zm1.733 9.989c-.209.652-1.156.848-1.615.352-.506-.459-.309-1.418.355-1.623.734-.31 1.582.537 1.26 1.271zm4.795.092c-.256.586-1.141.723-1.576.27-.209-.191-.27-.479-.344-.73.104-.458.42-.933.93-.955.705-.098 1.336.773.975 1.416h.015zM12.99 6.909c.008.961-1.275 1.561-1.995.909-.747-.535-.535-1.837.342-2.106.785-.315 1.713.344 1.651 1.185l.002.012zm-6.059.244c-.172.835-1.291 1.238-1.946.678-.759-.535-.546-1.861.345-2.131.873-.336 1.865.55 1.601 1.453z" />
+                </svg>
+            </a>
+            <a href="https://t.me/zgw010" target="_blank">
+                <svg class="icon telegram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <title>Telegram: zgw010</title>
+                    <path
+                        d="M23.91 3.79L20.3 20.84c-.25 1.21-.98 1.5-2 .94l-5.5-4.07-2.66 2.57c-.3.3-.55.56-1.1.56-.72 0-.6-.27-.84-.95L6.3 13.7l-5.45-1.7c-1.18-.35-1.19-1.16.26-1.75l21.26-8.2c.97-.43 1.9.24 1.53 1.73z" />
+                </svg>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
